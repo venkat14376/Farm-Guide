@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #a5d6a7;
+}
+
+.nav-links {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Horizontal menu */
+  gap: 25px; /* Space between items */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e8f5e9;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c8e6c9;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
